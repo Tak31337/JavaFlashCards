@@ -58,7 +58,7 @@ public class FlashCards {
 	private Label cardLabel;
 
 	public FlashCards(final Shell shell) {
-		shell.setText("Flash Cards");
+		shell.setText("Java Flash Cards");
 
 		// Set up data
 		cards = new ArrayList<Card>();
@@ -85,7 +85,7 @@ public class FlashCards {
 				if (file != null) {
 					File fileFile = new File(file);
 					readCards(fileFile);
-					shell.setText("Flash Cards - " + fileFile.getName());
+					shell.setText("Java Flash Cards - " + fileFile.getName());
 					randomCard();
 					side = FRONT;
 					updateLabel();
